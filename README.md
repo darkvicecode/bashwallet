@@ -19,9 +19,6 @@ Features:
 
 How to add transactions:
 
----==============---    
---- DarkViceCode ---
---- BASH Wallet  ---
 --------------------                   
 --- Wallet Menu  ---
 --------------------

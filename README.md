@@ -5,11 +5,15 @@ tested in android with termux bash
 # how to run:
 
  linux
+ 
 `chmod +x bashwallet.sh`
+
 `./bashwallet.sh`
 
  android (install termux and bash)
+ 
 `chmod +x bashwallet.sh`
+
 `bash bashwallet.sh`
 
 Features:

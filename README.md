@@ -2,6 +2,11 @@ Bash Wallet CLI is a personal account income / expense tracker for bash shell , 
 works inside a gnu screen session,
 tested in android with termux bash
 
+
+<img width="712" height="694" alt="Screenshot_20260519_092010_com_termux_TermuxActivity" src="https://github.com/user-attachments/assets/855f38f2-f783-4882-b33f-e29df48c2aaf" />
+
+
+
 # how to run:
 
  linux

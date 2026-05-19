@@ -29,6 +29,7 @@ How to add transactions:
 5. Edit Transaction
 6. Quit
 Enter your choice: 2
+
 Enter Transaction [account] [amount] [description]:
 
 how to add income:

@@ -28,6 +28,7 @@ How to add transactions:
 4. Delete Transaction
 5. Edit Transaction
 6. Quit
+
 Enter your choice: 2
 
 Enter Transaction [account] [amount] [description]:

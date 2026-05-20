@@ -53,6 +53,6 @@ how to add expense:
 
 *Transaction Data is saved in a flat text file named walletfile
 
-*test machine: Thinkpad x220 - Slackware Linux Current
-
-Honor x7c - Android 14
+*test machine: 
+- Thinkpad x220 - Slackware Linux Current
+- Honor x7c - Android 14

@@ -70,7 +70,7 @@ edit_transaction() {
     old_val=$(awk -v ln="$line_num" 'NR == ln' "$file")
     echo "Current: $old_val"
     read -p "Enter New Transaction (<account> <amount> <description>): " account amount desc
-    if [[ -n "$account" && "$amount" =~ ^[[:alnum:]-]+$ ]]; then
+    if [[ -n "$account" && "$amount" =~ ^[[:alnum:]-.]+$ ]]; then
       awk -v ln="$line_num" -v new="$date $account $amount $desc" 'NR == ln { print new; next } { print }' "$file" > "${file}.tmp" && mv "${file}.tmp" "$file"
       echo "Transaction updated."
     else
@@ -101,7 +101,7 @@ edit_transaction() {
 add_transaction() {
   read -p "Enter Transaction (<account> <amount> <description>): " account amount desc
   # Validation: account and amount are required, amount can be alphanumeric as requested
-  if [[ -n "$account" && "$amount" =~ ^[[:alnum:]-]+$ ]]; then
+  if [[ -n "$account" && "$amount" =~ ^[[:alnum:]-.]+$ ]]; then
     echo "$date $account $amount $desc" >> "$file"
     echo "Transaction added successfully."
   else

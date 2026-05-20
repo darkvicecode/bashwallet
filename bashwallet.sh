@@ -101,7 +101,7 @@ edit_transaction() {
 add_transaction() {
   read -p "Enter Transaction (<account> <amount> <description>): " account amount desc
   # Validation: account and amount are required, amount can be alphanumeric as requested
-  if [[ -n "$account" && "$amount" =~ ^[[:alnum:].]+$ ]]; then
+  if [[ -n "$account" && "$amount" =~ ^[[:alnum:]-]+$ ]]; then
     echo "$date $account $amount $desc" >> "$file"
     echo "Transaction added successfully."
   else
